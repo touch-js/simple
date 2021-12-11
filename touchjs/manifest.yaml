@@ -1,0 +1,51 @@
+# 插件展示的名称
+name: TouchJs Project Simple
+name_zh_cn: TouchJs项目事例
+
+# 插件描述
+description: This is a TouchJs javascript project simple.
+description_zh_cn: 这是一个TouchJs的js代码事例工程。
+
+# 插件图标
+icon: assets/icon.jpeg
+
+# 入口JS地址
+# 请使用相对地址
+bundle: js/bundle.js
+
+# 设置界面入口
+# 请使用相对地址，资源尽量本地化
+# 非必须配置项目
+settings: html/settings.html
+
+# 当前插件的版本号
+version: 0.0.1
+
+# TouchJs最低依赖版本号
+# 非必须配置项目
+touchjs: 1
+
+# 文档地址
+# 非必须配置项目
+wiki: https://github.com/touch-js/simple/wiki
+
+# 缺陷追踪地址
+# 非必须配置项目
+issues: https://github.com/touch-js/simple/issues
+
+# 作者
+# 非必须配置项目
+authors: 
+  - sollyu
+  - ethan
+
+# 需要权限
+# 非必须配置项目
+permissions:
+  - accessibility
+
+# 网络接口
+# 只需要添加域名即可
+# 非必须配置项目
+domains:
+  - github.com
