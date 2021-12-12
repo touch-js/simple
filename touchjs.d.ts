@@ -124,7 +124,7 @@ interface AccessibilityWaitBean {
      * text 字段
      * @since 1.0.0
      */
-    text?:string | undefined
+    text?: string | undefined
 
     /**
      * class字段
@@ -193,7 +193,7 @@ interface AccessibilityAction {
 
     /**
      * @since 1.0.0
-     */ 
+     */
     lockScreen(): void;
 
     /**
@@ -219,6 +219,28 @@ interface AccessibilityNodeInfo {
      * @since 1.0.0
      */
     click(): void;
+
+    /**
+     * 是否选中状态
+     * @since 1.0.0
+     */
+    isChecked(): boolean;
+}
+
+interface Device {
+    readonly build: DeviceBuild
+    readonly os: DeviceOs
+}
+
+interface DeviceBuild {
+    readonly board: string
+    readonly manufacturer: string
+    readonly model: string
+    readonly fingerprint: string
+}
+
+interface DeviceOs {
+    readonly name: string
 }
 
 interface TouchJS {
@@ -245,6 +267,12 @@ interface TouchJS {
      * @since 1.0.0
      */
     readonly accessibility: Accessibility
+
+    /**
+     * 设备相关
+     * @since 1.0.0
+     */
+    readonly device: Device
 }
 
 declare global {
