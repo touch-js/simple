@@ -7,7 +7,7 @@
   "author": "sollyu <sollyu@qq.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "copy-webpack-plugin": "^10.1.0",
+    "filemanager-webpack-plugin": "^6.1.7",
     "javascript-obfuscator": "^3.0.0",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
@@ -15,7 +15,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config ./config/webpack.config.js"
+    "build": "webpack --config ./config/webpack.config.js",
+    "push": "adb shell mkdir -p /data/local/tmp/touchjs && adb push dist/* /data/local/tmp/touchjs && adb shell mv -f /data/local/tmp/touchjs /sdcard/Android/data/io.github.touchjs/files/repositories/"
   },
   "dependencies": {
     "crypto-js": "^4.1.1"
